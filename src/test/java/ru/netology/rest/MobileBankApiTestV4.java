@@ -4,9 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.greaterThanOrEqualTo;
-
 
 class MobileBankApiTestV4 {
     @Test
@@ -21,8 +18,6 @@ class MobileBankApiTestV4 {
       // Проверки
       .then()
           .statusCode(200)
-          .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
-          .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
           .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
       ;
     }
