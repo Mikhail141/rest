@@ -27,10 +27,8 @@
         "type": "integer"
       },
       "currency": {
-        "type": "string",
-        "enum": [
-          "RUB"
-        ]
+        "type object": {"type": "string",
+          "enum": ["RUB", "USD"]}
       }
     }
   }
